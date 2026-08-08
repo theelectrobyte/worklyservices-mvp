@@ -105,7 +105,7 @@ if (serviceForm) {
         button.disabled = true;
 
         try {
-            const response = await fetch("https://super-dust-b6ef.gouthamcp2007.workers.dev/", {
+            const response = await fetch("https://super-dust-b6ef.thesolodevelopers.workers.dev/", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
