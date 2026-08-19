@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workly Services | Home Repair & Maintenance Services in Ernakulam, Kochi, Vytila, Kaloor, Edappally, Panambally Nagar & Kakkanad</title>
+    <meta name="description"
+        content="Request trusted local home repair support in Ernakulam, Kochi, Vytila, Kaloor, Edappally, Panambally Nagar & Kakkanad. Book certified electricians, plumbers, and general maintenance services at your doorstep in minutes." />
+
+    <link rel="canonical" href="https://www.worklyservices.in/">
+
+    <link rel="shortcut icon" href="logo.svg" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manjari:wght@100;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="page-shell">
+        <header class="site-header">
+            <a class="brand" href="index.html" aria-label="Workly Services home">
+                <span class="brand-mark"><img src="logo.webp" alt="Workly Services Logo" srcset=""></span>
+                <span>
+                    <strong data-ml="വർക്ക്ലി" data-en="Workly">Workly</strong>
+                    <small data-ml="വിശ്വസനീയമായ വീട് അറ്റകുറ്റപ്പണികൾ" data-en="Trusted home repair support">Trusted
+                        home repair support</small>
+                </span>
+            </a>
+
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a data-ml="ബുക്ക് സർവീസ്" data-en="Book Service" class="nav-card bookLarge"
+                    href="index.html">Book Service</a>
+                <a data-ml="ബുക്ക്" data-en="Book" class="nav-card bookSmall" href="#request-service-section">Book</a>
+                <a data-ml="ബന്ധപ്പെടുക" data-en="Contact" class="nav-card contact" href="#contact-footer">Contact</a>
+                <button id="lang-toggle" class="lang-toggle nav-card" aria-label="Switch language">മലയാളം</button>
+                <button id="lang-toggle-small" class="lang-toggle nav-card" aria-label="Switch language"
+                    style="display: none;">മ</button>
+            </nav>
+        </header>
+
+        <div id="langPopup" class="popup-overlay">
+            <div class="popup-content">
+                <h3>Select Your Preferred Language</h3>
+                <p>Change this anytime using the language button at the top.</p>
+                <div class="btn-group">
+                    <button class="lang-toggle nav-card" onclick="setLanguage('ml')">English</button>
+                    <button class="lang-toggle nav-card" onclick="setLanguage('en')">മലയാളം</button>
+                </div>
+            </div>
+        </div>
+        <div id="loadingOverlay" class="overlay">
+            <div class="spinner"></div>
+        </div>
+        <main id="top">
+            <section class="hero-section" id="services-overview">
+                <div class="hero-copy">
+                    <p data-ml="വേഗതയേറിയ സൗഹൃദപരമായ വിശ്വസിക്കാവുന്ന സേവനങ്ങൾ" data-en="Fast, friendly, reliable service in Ernakulam"
+                        class="section-label">Fast, friendly, reliable service in Ernakulam</p>
+                    <h1 data-ml="കൊച്ചിയിലും എറണാകുളത്തും ഹോം റിപ്പയർ സേവനങ്ങൾക്കായി ബുക്ക് ചെയ്യു..."
+                        data-en="Book Dependable Home Repair Services in Kochi & Ernakulam.">Book Dependable Home Repair Services in Kochi & Ernakulam.</h1>
+                    <p class="hero-description"
+                        data-ml="വൈദ്യുത അറ്റകുറ്റപ്പണികൾ മുതൽ പ്ലംബിംഗ് പ്രശ്‌നങ്ങളും പൊതുവായ അറ്റകുറ്റപ്പണികളും വരെ, 
+                        എറണാകുളത്തും കൊച്ചിയിലും ഉള്ള ഞങ്ങളുടെ ടീം നിങ്ങളുടെ വീട്ടുവാതിൽക്കൽ ശാന്തവും വ്യക്തവുമായ സേവനം എത്തിക്കുന്നു."
+                        data-en="From electrical fixes to
+                        plumbing issues and general maintenance, our local professionals in Ernakulam & Kochi bring calm, clear service right to your door.">From electrical fixes to
+                        plumbing issues and general maintenance,
+                        our local professionals in Ernakulam & Kochi bring calm, clear service right to your door.</p>
+
+                    <div class="hero-points" aria-label="Service highlights">
+                        <div data-ml="⚡ഇലക്ട്രിക്കൽ" data-en="⚡ Electrical work" class="point-card">⚡ Electrical work
+                        </div>
+                        <div data-ml="🚿 പ്ലംബിംഗ്" data-en="🚿 Plumbing" class="point-card">🚿 Plumbing</div>
+                    </div>
+
+                    <div class="hero-img">
+                        <img src="hero-image.webp" alt="A friendly repair professional offering home maintenance services in Ernakulam, Kochi, Vytila, Kaloor, Edappally, Panambally Nagar & Kakkanad" />
+                    </div>
+                </div>
+
+                <section class="request-card" id="request-service-section" aria-labelledby="request-title">
+                    <div class="request-card-header">
+                        <p data-ml="സേവനം ബുക്ക് ചെയ്യുക" data-en="Book a service" class="section-label">Book a service
+                        </p>
+                        <h2 id="request-title" data-ml="എന്താണ് പ്രശ്നം എന്ന് പറയൂ"
+                            data-en="Tell us what needs attention.">Tell us what needs attention.</h2>
+                        <p data-ml="നിങ്ങളുടെ വിവരങ്ങൾ പങ്കിടുക, നിങ്ങളെ സന്ദർശിക്കുന്നതിനായി ഞങ്ങളുടെ ടീം ഉടൻ തന്നെ നിങ്ങളെ ബന്ധപ്പെടുന്നതായിരിക്കും."
+                            data-en="Share your details and our team will reach out shortly to confirm your visit.">
+                            Share your details and our team will reach out shortly to confirm your visit.
+                        </p>
+                    </div>
+
+                    <form id="service-request-form" class="service-form">
+                        <fieldset class="form-section">
+                            <legend data-ml="ബന്ധപ്പെടാനുള്ള വിവരങ്ങൾ" data-en="Contact info">Contact info</legend>
+                            <div class="form-grid">
+                                <label class="field">
+                                    <span data-ml="മുഴുവൻ പേര്" data-en="Full name">Full name</span>
+                                    <input data-ml="നിങ്ങളുടെ പേര്" data-en="Ex: Alex Morgan" id="full-name"
+                                        name="fullName" type="text" placeholder="Ex: Alex Morgan" required />
+                                </label>
+                                <label class="field">
+                                    <span data-ml="ഫോൺ നമ്പർ" data-en="Phone number">Phone number</span>
+                                    <input data-ml="നിങ്ങളുടെ ഫോൺ നമ്പർ" data-en="Ex: 98765 43210" id="phone-number"
+                                        name="phoneNumber" type="tel" placeholder="Ex: 98765 43210" required />
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="form-section">
+                            <legend data-ml="സേവന വിവരങ്ങൾ" data-en="Service details">Service details</legend>
+                            <div class="form-grid">
+                                <label class="field">
+                                    <span data-ml="പ്രവർത്തനത്തിന്റെ തരം" data-en="Type of work">Type of work</span>
+                                    <select id="service-type" name="serviceType" required>
+                                        <option value="" disabled selected hidden data-ml="സേവനം തിരഞ്ഞെടുക്കുക"
+                                            data-en="Select a service">Select a service</option>
+                                        <option data-ml="ഇലക്ട്രിക്കൽ" data-en="Electrical">Electrical</option>
+                                        <option data-ml="പ്ലബിംഗ്" data-en="Plumbing">Plumbing</option>
+                                        <!-- <option data-ml="ആപ്ലയൻസ് റീപ്പർ" data-en="Appliance repair">Appliance repair</option> -->
+                                        <!-- <option data-ml="പെയിന്റിംഗ്" data-en="Painting">Painting</option> -->
+                                        <!-- <option data-ml="സാധാരണ മെയിൻറെന്‍സ്" data-en="General maintenance">General maintenance</option> -->
+                                    </select>
+                                </label>
+                                <label class="field">
+                                    <span data-ml="സ്ഥലം" data-en="Location">Location</span>
+                                    <select id="service-location" name="serviceLocation" required>
+                                        <option value="" disabled selected hidden data-ml="സ്ഥലം തിരഞ്ഞെടുക്കുക"
+                                            data-en="Select a location">Select a location</option>
+                                        <option data-ml="വൈറ്റില" data-en="Vyttila">Vyttila</option>
+                                        <option data-ml="കലൂർ" data-en="Kaloor">Kaloor</option>
+                                        <option data-ml="പനമ്പിള്ളി നഗർ" data-en="Panampilly Nagar">Panampilly Nagar
+                                        </option>
+                                        <option data-ml="ഇടപ്പള്ളി" data-en="Edappally">Edappally</option>
+                                        <option data-ml="കാക്കനാട്" data-en="Kakkanad">Kakkanad</option>
+                                    </select>
+                                </label>
+                            </div>
+
+                            <label class="field">
+                                <span data-ml="വിലാസം" data-en="Street address">Street address</span>
+                                <input data-ml="വീട്ട് പേര് , റോഡ്" data-en="House no., street name" id="street-address"
+                                    name="streetAddress" type="text" placeholder="House no., street name" required />
+                            </label>
+
+                            <label class="field">
+                                <span data-ml="ലാൻഡ്മാർക്ക് (നിർബന്ധമില്ല)" data-en="Landmark (optional)">Landmark
+                                    (optional)</span>
+                                <input data-ml="ലാൻഡ്മാർക്ക് (നിർബന്ധമില്ല)" data-en="Ex: Near the blue pharmacy"
+                                    id="landmark" name="landmark" type="text"
+                                    placeholder="Ex: Near the blue pharmacy" />
+                            </label>
+                        </fieldset>
+
+                        <fieldset class="form-section">
+                            <legend data-ml="കുറിപ്പുകൾ" data-en="Notes">Notes</legend>
+                            <label class="field">
+                                <span data-ml="പ്രശ്ന വിശദാംശങ്ങൾ" data-en="Issue details">Issue details</span>
+                                <textarea data-ml="പ്രശ്നം ചുരുക്കി വിവരിക്കൂ..."
+                                    data-en="Briefly describe the problem..." id="issue-details" name="issueDetails"
+                                    rows="4" placeholder="Briefly describe the problem..." required></textarea>
+                            </label>
+
+                            <!-- <label class="field"> -->
+                            <!--     <span data-ml="കുറിപ്പുകൾ (നിർബന്ധമില്ല)" data-en="Notes (optional)">Notes (optional)</span> -->
+                            <!--     <textarea data-ml="ഏതെങ്കിലും പ്രത്യേക നിർദ്ദേശങ്ങൾ പങ്കിടുക..." data-en="Share any special instructions..." id="notes" name="notes" rows="3" -->
+                            <!--         placeholder="Share any special instructions..."></textarea> -->
+                            <!-- </label> -->
+                        </fieldset>
+
+                        <div class="captchabox"><div class="cf-turnstile" data-size="flexible" data-sitekey="0x4AAAAAAD2fd4yiO5YJ69IQ" data-theme="light" id="captcha"></div></div>
+                        <p style="padding: 0 0.5rem 0;" class="form-status agreement">By continuing to use this website, you agree to our
+                            <span><a href="termsandprivacy.html#tnc">Terms of Service</a></span> and 
+                            <span><a href="termsandprivacy.html#privacypolicy">Privacy Policy</a></span>.</p>
+                        <button data-ml="സേവനം ബുക്ക് ചെയ്യുക" data-en="Book Service" class="submit-button"
+                            id="submitBtn" type="submit">Book Service</button>
+
+                        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+                    </form>
+                </section>
+            </section>
+        </main>
+
+        <footer class="site-footer" id="contact-footer">
+            <div>
+                <p data-ml="ഞങ്ങൾ നിങ്ങൾക്കായി ഇവിടെയുണ്ട്" data-en="We are here for you in Ernakulam" class="section-label">We are here for you in Ernakulam</p>
+                <h3 data-ml="സ്വന്തം വീട്ടിലെ പോലെയുള്ള സൗഹൃദപിന്തുണ"
+                    data-en="Friendly support that feels close to home.">Friendly support that feels close to home.</h3>
+                <p data-ml="കൊച്ചിയിലുടനീളമുള്ള വീടുകളിൽ ശ്രദ്ധയോടെയും വ്യക്തതയോടെയും വിശ്വസനീയമായ സേവനത്തോടെയും സേവനം നൽകുന്നു."
+                    data-en="Serving homes across Kochi with care, clarity, and dependable service.">Serving homes across Kochi with care, clarity, and dependable service.</p>
+            </div>
+
+            <div class="footer-contact">
+                <a href="tel:+917994482516">+91 79944 82516</a>
+                <a href="mailto:worklyservices@gmail.com">worklyservices@gmail.com</a>
+                <p><span><a href="termsandprivacy.html#tnc" data-ml="സേവന നിബന്ധനകൾ" data-en="Terms of Service">Terms of
+                            Service</a></span> & <span><a href="termsandprivacy.html#privacypolicy"
+                            data-ml="സ്വകാര്യതാ നയം" data-en="Privacy Policy">Privacy Policy</a></span></p>
+                <p data-ml="© 2026 വർക്ക്ലി സർവീസസ്. എല്ലാ അവകാശങ്ങളും നിക്ഷിപ്തം"
+                    data-en="© 2026 Workly Services. All rights reserved.">© 2026 Workly Services. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
